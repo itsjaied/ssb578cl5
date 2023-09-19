@@ -1,0 +1,269 @@
+/* global css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-decoration: none;
+  padding: 4px 30px;
+  border: 1px solid #000;
+}
+a:hover {
+  color: #000;
+  background-color: transparent;
+}
+section {
+  max-width: 100%;
+  padding: 80px 0;
+}
+.title {
+  padding: 0 0 80px;
+}
+.title h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  color: #000;
+  text-align: center;
+}
+/* ------------------------ */
+
+/* header section */
+.header {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url('../images/herobg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .inner-header {
+  background-color: rgb(255, 255, 255, 0.6);
+  font-family: 'Open Sans', sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+.header .inner-header p:first-child {
+  text-transform: uppercase;
+  margin: 0;
+}
+.header .inner-header p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 16px;
+}
+.header .inner-header h1 {
+  width: 100%;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0 0 16px;
+}
+
+/* joy-of-tea section start */
+.joy-of-tea {
+  background-color: #e8e1d9;
+}
+.joy-of-tea .row {
+  display: flex;
+  gap: 15px;
+}
+.joy-of-tea .row .col-6 {
+  flex-basis: 50%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.joy-of-tea .row .col-6 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.joy-of-tea .row .col-6 ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 16px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.joy-of-tea .row .col-6 ul li span {
+  font-size: 16px;
+}
+.joy-of-tea .row .col-6 a {
+  align-self: flex-start;
+}
+
+/* popular-tea section */
+.popular-tea {
+  background-color: #f3f2ee;
+}
+.popular-tea .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+}
+.popular-tea .row .col-3 p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+.popular-tea .btn {
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+/* recent section */
+.recent {
+  background-color: #e8e1d9;
+}
+.recent .row {
+  display: flex;
+  gap: 15px;
+}
+.recent .row .col-6 {
+  width: 50%;
+}
+.recent .row .col-6 .recent-text {
+  padding: 40px 0;
+}
+.recent .row .col-6 .recent-text p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.recent .row .col-6 .recent-text ul {
+  list-style: inside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.recent .row .col-6 .recent-text ul li {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.recent .row .col-6 .recent-text .recent-btn {
+  text-align: left;
+  margin: 20px 0 0;
+}
+.recent .row .right {
+  background: url('../images/recentimg.png') no-repeat top center;
+  background-size: cover;
+  box-shadow: -1px 5px 6px #c5bfb9;
+}
+
+/* member section start */
+.member {
+  background-color: #f3f2ee;
+  font-family: 'Rubik', sans-serif;
+}
+.member .title h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+.member .inner-member {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.member .member-review {
+  max-width: 100%;
+  background-color: #fff;
+  padding: 20px 20px 40px;
+  border-radius: 25px;
+}
+.member .member-review ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1px;
+}
+.member .member-review li {
+  color: #fad064;
+  font-size: 16px;
+}
+.member .member-review .name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.member .member-review .r-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.member .member-review .verified {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+.member .member-review .verified img {
+  width: 12px;
+}
+.member .member-review span {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 22px;
+}
+/* footer section start */
+.footer {
+  padding: 80px 0;
+  background-color: #e8e1d9;
+}
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.footer .row .col-4 img {
+  max-width: 250px;
+}
+
+/* The End */
